@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 omdb:
   api-key: 37e8940a
   base-url: http://www.omdbapi.com

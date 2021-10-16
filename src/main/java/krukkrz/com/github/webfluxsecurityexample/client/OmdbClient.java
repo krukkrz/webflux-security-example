@@ -24,7 +24,6 @@ public class OmdbClient {
                         .queryParam("s", title)
                         .build())
                 .retrieve()
-                .bodyToMono(SearchResult.class)
-                .doOnEach(mono -> log.info("{}", mono.get()));
+                .bodyToMono(SearchResult.class);
     }
 }
